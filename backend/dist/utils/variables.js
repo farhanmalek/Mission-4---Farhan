@@ -48,7 +48,6 @@ exports.colors = [
 exports.cars = [
     "sedan",
     "mid-size car",
-    "city car",
     "sports car",
     "coupe",
     "compact",
@@ -61,7 +60,6 @@ exports.cars = [
     "van",
     "family car",
     "full-size",
-    "sport utility vehicle",
     "truck",
     "pickup truck",
     "pickup",

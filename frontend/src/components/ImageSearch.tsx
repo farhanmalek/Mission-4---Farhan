@@ -1,75 +1,20 @@
-import { useState, useEffect, useCallback } from "react";
-import axios, { AxiosResponse } from "axios";
+
 import turners from "../../public/turners.png";
-import { useDropzone } from "react-dropzone";
 
-const API_KEY: string = import.meta.env.VITE_API_KEY as string;
-const API_URL: string = import.meta.env.VITE_API_ENDPOINT as string;
-
-interface apiResponse {
-  name: string;
-  confidence: number;
+interface ImageSearchProps {
+  getRootProps: () => object;
+  getInputProps: () => object
+  isDragActive: boolean;
+  preview: string | undefined;
 }
 
-function ImageSearch(): JSX.Element {
 
-  const [output, setOutput] = useState<apiResponse[]>([]);
-  const [matches, setMatches] = useState();
-  const [preview, setPreview] = useState<undefined | string>();
-
-  //Dropzone
-  const onDrop = useCallback((acceptedFiles: FileList) => {
-    // Do something with the files
-    const reader = new FileReader();
-    reader.onload = () => {
-      setPreview(reader.result as string);
-    };
-    reader.readAsDataURL(acceptedFiles[0]);
-  }, []);
-  const {acceptedFiles, getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
-
-  // Fetch key tags from AI API
-  async function getImageData() {
-    if (acceptedFiles.length > 0) {
-      try {
-        const response = await axios.post(API_URL, acceptedFiles[0], {
-          headers: {
-            "Content-Type": acceptedFiles[0].type,
-            "Ocp-Apim-Subscription-Key": API_KEY,
-          },
-        });
-        setOutput(response.data.tagsResult.values);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  }
-
-  // Send data to backend
-  async function sendData(data: apiResponse[]) {
-    try {
-      const response: AxiosResponse = await axios.post(
-        "http://localhost:5000/carvision",
-        data
-      );
-      setMatches(response.data);
-      console.log(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
-  useEffect(() => {
-    if (acceptedFiles.length > 0) {
-      getImageData();
-    }
-  }, [acceptedFiles]);
-
-  useEffect(() => {
-    if (output.length > 0) {
-      sendData(output);
-    }
-  }, [output]);
+function ImageSearch({
+  getRootProps,
+  getInputProps,
+  isDragActive,
+  preview,
+}: ImageSearchProps): JSX.Element {
 
 
   return (

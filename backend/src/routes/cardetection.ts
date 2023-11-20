@@ -31,6 +31,8 @@ router.post("/carvision", async (req: Request, res: Response) => {
     const carTypeMatch: string = carType[0];
     const carColorMatch: string = carColor[0];
 
+    console.log(carTypeMatch, carColorMatch);
+
     // Find exact match if both carType and carColor are provided
     if (carType.length > 0 && carColor.length > 0) {
       const matchingCars = await CarModel.find({ bodyType: carTypeMatch, color: carColorMatch });
@@ -48,7 +50,7 @@ router.post("/carvision", async (req: Request, res: Response) => {
     }
 
     // No cars found
-    res.status(400).json({ message: "No cars found" });
+    res.status(404).json({ message: "No cars found" });
   } catch (err) {
     console.error(err);
     res.status(500).send("Server error");

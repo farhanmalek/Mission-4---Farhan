@@ -46,7 +46,6 @@ export const colors: string[] = [
 export const cars: string[] = [
   "sedan",
   "mid-size car",
-  "city car",
   "sports car",
   "coupe",
   "compact",
@@ -59,7 +58,6 @@ export const cars: string[] = [
   "van",
   "family car",
   "full-size",
-  "sport utility vehicle",
   "truck",
   "pickup truck",
   "pickup",

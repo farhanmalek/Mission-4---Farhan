@@ -35,6 +35,7 @@ router.post("/carvision", (req, res) => __awaiter(void 0, void 0, void 0, functi
         const [carType, carColor] = getColorAndTypeArrays(req.body);
         const carTypeMatch = carType[0];
         const carColorMatch = carColor[0];
+        console.log(carTypeMatch, carColorMatch);
         // Find exact match if both carType and carColor are provided
         if (carType.length > 0 && carColor.length > 0) {
             const matchingCars = yield Cars_1.default.find({ bodyType: carTypeMatch, color: carColorMatch });
@@ -50,7 +51,7 @@ router.post("/carvision", (req, res) => __awaiter(void 0, void 0, void 0, functi
             }
         }
         // No cars found
-        res.status(400).json({ message: "No cars found" });
+        res.status(404).json({ message: "No cars found" });
     }
     catch (err) {
         console.error(err);

@@ -17,8 +17,9 @@ const cors_1 = __importDefault(require("cors"));
 const cardetection_1 = __importDefault(require("./routes/cardetection"));
 const createcar_1 = __importDefault(require("./routes/createcar"));
 const mongoose_1 = __importDefault(require("mongoose"));
+require('dotenv').config();
 const app = (0, express_1.default)();
-const url = "mongodb+srv://malekf2328:Farhan123@cluster0.kkqry8r.mongodb.net/?retryWrites=true&w=majority";
+const url = process.env.MONGO_KEY;
 //middleware
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());
