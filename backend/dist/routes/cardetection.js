@@ -33,7 +33,6 @@ function getColorAndTypeArrays(apiData) {
 router.post("/carvision", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const [carType, carColor] = getColorAndTypeArrays(req.body);
-        console.log(carType, "cartypes");
         let carTypeMatch = carType[0];
         const carColorMatch = carColor[0];
         //Further filtering logic to combat inconsistencies in the API.
@@ -51,7 +50,6 @@ router.post("/carvision", (req, res) => __awaiter(void 0, void 0, void 0, functi
         else if (carTypeMatch === "sport utility vehicle" && carType.includes("truck") || carType.includes("pickup")) {
             carTypeMatch = "truck";
         }
-        console.log(carTypeMatch, carColorMatch);
         // Find exact match if both carType and carColor are provided
         if (carType.length > 0 && carColor.length > 0) {
             const matchingCars = yield Cars_1.default.find({ bodyType: carTypeMatch, color: carColorMatch });

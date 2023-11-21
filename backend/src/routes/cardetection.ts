@@ -28,7 +28,7 @@ function getColorAndTypeArrays(apiData: apiResponse[]): string[][] {
 router.post("/carvision", async (req: Request, res: Response) => {
   try {
     const [carType, carColor] = getColorAndTypeArrays(req.body);
-    console.log(carType, "cartypes")
+    
     let carTypeMatch: string = carType[0];
     const carColorMatch: string = carColor[0];
 
@@ -45,7 +45,6 @@ router.post("/carvision", async (req: Request, res: Response) => {
       carTypeMatch = "truck";
     }
 
-    console.log(carTypeMatch, carColorMatch);
 
     // Find exact match if both carType and carColor are provided
     if (carType.length > 0 && carColor.length > 0) {

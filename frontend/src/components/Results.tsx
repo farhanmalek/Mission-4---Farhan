@@ -15,10 +15,8 @@ interface matches {
 }
 
 function Results(matches: matches) {
-
-
 const matchArray = matches.matches;
-console.log(matchArray)
+
   return (
 <div>
   <p>We found {matchArray.length} match{matchArray.length === 1 ? "": "es"}</p>
