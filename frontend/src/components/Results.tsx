@@ -18,8 +18,8 @@ function Results(matches: matches) {
 const matchArray = matches.matches;
 
   return (
-<div>
-  <p>We found {matchArray.length} match{matchArray.length === 1 ? "": "es"}</p>
+<div className="flex flex-wrap flex-col  w-[60vw]">
+  <p className="font-bold mt-1">We found {matchArray.length} match{matchArray.length === 1 ? "": "es"}</p>
       {matchArray.length  > 0 ?
         <div className="flex flex-wrap justify-center">
           {matchArray.map((match) => (
