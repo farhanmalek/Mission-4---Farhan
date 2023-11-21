@@ -4,6 +4,7 @@ import axios from "axios";
 import { colors, cars } from "../utils/variables";
 import CarModel, {Car} from "../db/Cars";
 
+
 const router: Router = express.Router();
 
 interface apiResponse {
@@ -28,7 +29,9 @@ function getColorAndTypeArrays(apiData: apiResponse[]): string[][] {
 router.post("/carvision", async (req: Request, res: Response) => {
   try {
     const [carType, carColor] = getColorAndTypeArrays(req.body);
-    console.log(carType, "cartypes")
+  
+
+   
     let carTypeMatch: string = carType[0];
     const carColorMatch: string = carColor[0];
 
@@ -44,7 +47,7 @@ router.post("/carvision", async (req: Request, res: Response) => {
     } else if(carTypeMatch === "sport utility vehicle" && carType.includes("truck") || carType.includes("pickup")) {
       carTypeMatch = "truck";
     }
-    console.log(carTypeMatch, "cartypematch")
+ 
 
 
     // Find exact match if both carType and carColor are provided

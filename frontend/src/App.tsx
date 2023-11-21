@@ -77,7 +77,7 @@ function App(): JSX.Element {
     <>
       <div className="flex justify-between">
         <div className=" px-6 py-2 rounded-md bg-slate-700 text-white font-bold mb-[-4px]">
-          Image Search
+          Image Search (beta)
         </div>
         <div className=" px-6 py-2 rounded-md bg-slate-700 text-white font-bold mb-[-4px]">
           Regular Search
