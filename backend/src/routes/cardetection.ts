@@ -28,8 +28,22 @@ function getColorAndTypeArrays(apiData: apiResponse[]): string[][] {
 router.post("/carvision", async (req: Request, res: Response) => {
   try {
     const [carType, carColor] = getColorAndTypeArrays(req.body);
-    const carTypeMatch: string = carType[0];
+    console.log(carType, "cartypes")
+    let carTypeMatch: string = carType[0];
     const carColorMatch: string = carColor[0];
+
+    //Further filtering logic to combat inconsistencies in the API.
+    if (carTypeMatch === "city car") {
+      if ((carType.includes("sedan")) || carType.includes("mid-size car") && !carType.includes("hatchback")) {
+        carTypeMatch = "sedan";
+      } else if ((carType.includes("hatchback")) || carType.includes("compact")) {
+        carTypeMatch = "hatchback";
+      }
+    } else if (carTypeMatch === "hatchback" && carType.includes("sport utility vehicle")) {
+      carTypeMatch = "suv";
+    } else if(carTypeMatch === "sport utility vehicle" && carType.includes("truck") || carType.includes("pickup")) {
+      carTypeMatch = "truck";
+    }
 
     console.log(carTypeMatch, carColorMatch);
 
@@ -50,7 +64,7 @@ router.post("/carvision", async (req: Request, res: Response) => {
     }
 
     // No cars found
-    res.status(404).json({ message: "No cars found" });
+    res.status(200).json([]);
   } catch (err) {
     console.error(err);
     res.status(500).send("Server error");

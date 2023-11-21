@@ -69,4 +69,6 @@ exports.cars = [
     "hot hatch",
     "subcompact car",
     "compact mpv",
+    "city car",
+    "sport utility vehicle"
 ];

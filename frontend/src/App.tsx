@@ -60,6 +60,7 @@ function App(): JSX.Element {
     }
   }
 
+
   useEffect(() => {
     if (acceptedFiles.length > 0) {
       getImageData();
