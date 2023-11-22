@@ -53,7 +53,7 @@ function App(): JSX.Element {
   async function sendData(data: apiResponse[]) {
     try {
       const response: AxiosResponse = await axios.post(
-        "https://mission-2-farhan.vercel.app/carvision",
+        "https://mission-2-farhan-backend.vercel.app/carvision",
         data
       );
       setMatches(response.data);
