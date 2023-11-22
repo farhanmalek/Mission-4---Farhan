@@ -33,7 +33,7 @@ async function connect() {
 }
 connect();
 
-const port:number = 5000;
+const port:number | string = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`Serving Base @ http://localhost:${port}`);
 })
