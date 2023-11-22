@@ -16,6 +16,11 @@ app.use(express.json());
 app.use("/", router);
 app.use("/", createCarRouter);
 
+app.get("/", (req:Request, res:Response) => {
+    res.send("Welcome to the Base API");
+
+})
+
 
 //Connections to DB and Port
 async function connect() {
