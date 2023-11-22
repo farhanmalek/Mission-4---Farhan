@@ -1,5 +1,12 @@
 {
-  "version": 2,
-  "builds": [{ "src": "*.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "/" }]
-}
+    "version": 2,
+    "builds": [
+      {
+        "src": "*.ts",
+        "use": "@vercel/node@2.4.0",
+        "config": { "maxLambdaSize": "10mb" }
+      }
+    ],
+    "routes": [{ "src": "/(.*)", "dest": "/" }]
+  }
+  
