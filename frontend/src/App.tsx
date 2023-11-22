@@ -17,7 +17,7 @@ function App(): JSX.Element {
   const [matches, setMatches] = useState();
   const [preview, setPreview] = useState<undefined | string>();
   //Dropzone
-  const onDrop = useCallback((acceptedFiles: FileList) => {
+  const onDrop = useCallback((acceptedFiles: File[]) => {
     // Do something with the files
     const reader = new FileReader();
     reader.onload = () => {
@@ -25,8 +25,10 @@ function App(): JSX.Element {
     };
     reader.readAsDataURL(acceptedFiles[0]);
   }, []);
+
+
   const { acceptedFiles, getRootProps, getInputProps, isDragActive } =
-    useDropzone({ onDrop,});
+    useDropzone({ onDrop });
 
   // Fetch key tags from AI API
   async function getImageData() {
