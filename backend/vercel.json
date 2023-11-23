@@ -1,12 +1,6 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "*.ts",
-        "use": "@vercel/node@2.4.0",
-        "config": { "maxLambdaSize": "10mb" }
-      }
-    ],
-    "routes": [{ "src": "/(.*)", "dest": "/" }]
+   "rewrites": [
+    {"source": "/(.*)", "destination": "/"}
+   ]
   }
   
