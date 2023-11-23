@@ -15,10 +15,26 @@ The digital team at Turners would like to prototype a solution that allows a use
 ### To Run
 - Fork the repo and clone to your code editor
 - npm i both the front and backend to install all relevant packages
+
+
+- Create a `.env` file in the `backend` folder and set the following environment variables:
+
+   ```env
+
+   MONGO_KEY=your_mongodb_uri
+   ```
+
+- - Create a `.env` file in the `frontend` folder and set the following environment variables:
+
+   ```env
+
+   VITE_API_KEY=your_azure_computer_vision_key
+   VITE_API_ENDPOINT=your_azure_computer_vision_endpoint
+   ```
 - npm run dev on both the front and backend directorys.
 - To test, upload a JPG or PNG file to the drop zone area and relevant cars detected by AI API will be returned from the DB.
 - Note: Microsofts API is not entirely accurate so there may be some discrepancies.
 
 Created by Farhan Malek as part of the Mission Ready L5 Course - Mission 2.
 Hosted Version of the project can be found here :
-(Coming Soon)
+(https://mission-2-farhan-frontend.vercel.app/)
