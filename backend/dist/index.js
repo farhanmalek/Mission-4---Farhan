@@ -26,6 +26,9 @@ app.use(express_1.default.json());
 //Routes
 app.use("/", cardetection_1.default);
 app.use("/", createcar_1.default);
+app.get("/", (req, res) => {
+    res.send("Welcome to the Base API");
+});
 //Connections to DB and Port
 function connect() {
     return __awaiter(this, void 0, void 0, function* () {
@@ -39,7 +42,7 @@ function connect() {
     });
 }
 connect();
-const port = 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`Serving Base @ http://localhost:${port}`);
 });
