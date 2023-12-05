@@ -22,6 +22,8 @@ The digital team at Turners would like to prototype a solution that allows a use
    ```env
 
    MONGO_KEY=your_mongodb_uri
+   DB_NAME = your_local_db
+   COLLECTION_NAME = your_chosen_name
    ```
 
 - - Create a `.env` file in the `frontend` folder and set the following environment variables:
@@ -31,7 +33,7 @@ The digital team at Turners would like to prototype a solution that allows a use
    VITE_API_KEY=your_azure_computer_vision_key
    VITE_API_ENDPOINT=your_azure_computer_vision_endpoint
    ```
-- npm run dev on both the front and backend directorys.
+- npm run dev on both the front and backend directorys. Ensure you have seeded the data into your local database first. See below in the CLI section.
 - To test, upload a JPG or PNG file to the drop zone area and relevant cars detected by AI API will be returned from the DB.
 - Note: Microsofts API is not entirely accurate so there may be some discrepancies.
 
