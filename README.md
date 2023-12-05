@@ -35,6 +35,30 @@ The digital team at Turners would like to prototype a solution that allows a use
 - To test, upload a JPG or PNG file to the drop zone area and relevant cars detected by AI API will be returned from the DB.
 - Note: Microsofts API is not entirely accurate so there may be some discrepancies.
 
-Created by Farhan Malek as part of the Mission Ready L5 Course - Mission 2.
+Created by Farhan Malek as part of the Mission Ready L5 Course - Mission 4.
 Hosted Version of the project can be found here :
 (https://mission-2-farhan-frontend.vercel.app/)
+
+#### CLI Usage
+- To use the CLI tools and work with the dummy data provided. Follow the steps outlined below.
+- Navigate to the backend directory, two files can be found; The JSON file containing the data a user can seed and modify and the CLI commands.
+- To begin, ensure your local mongodb compass is setup, and input your own env variables in a .env file. Ensure your mongo server runs on either `localhost: 27017` or `mongodb://127.0.0.1:27017`.
+- To seed the provided dummy data into your mongodb database:
+  ```bash
+  npm run seed
+  ```
+  - The user should be shown a success message implying the data has been imported.
+
+Functionality:
+With the use of the CLI tools we can do the following:
+1. Seed data into DB (NOTE: all previous entries into the db will be cleared, if reseeded)
+2. Find data from the DB by name or colour
+3. Retrieve a list of all items in the database
+4. Add an item to the database
+5. Delete an item to the database
+
+To view all commands and information on each:
+  ```bash
+  node cli/seed.js
+  ```
+
