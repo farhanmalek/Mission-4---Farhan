@@ -1,0 +1,277 @@
+[{
+  "image": "https://images.carexpert.com.au/app/uploads/2022/12/Toyota-Corolla-Sedan-Ascent-Sport-Hybrid-HERO-16x9-1.jpg",
+  "brand": "Toyota",
+  "color": "red",
+  "price": 25000,
+  "bodyType": [
+    "sedan",
+    "mid-size car"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://images.squarespace-cdn.com/content/v1/51297e5de4b01fa6748bc904/1586300204878-CZOLSBY237LIS8KIM6LN/02%2B2020%2BToyota%2BCorolla%2BSedan%2B8390hr.jpg",
+  "brand": "Toyota",
+  "color": "blue",
+  "price": 45000,
+  "bodyType": [
+    "sedan",
+    "mid-size car"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://carsales.pxcrush.net/carsales//car/dealer/472bcedd0ede2e6b504d4f283a4f1ca5.jpg",
+  "brand": "BMW",
+  "color": "blue",
+  "price": 32000,
+  "bodyType": [
+    "sports car",
+    "coupe",
+    "compact",
+    "roadster",
+    "sport compact",
+    "supermini"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://assets.whichcar.com.au/image/private/s--YjAFqb-R--/ar_2.304921968787515,c_fill,f_auto,g_xy_center,q_auto:good,x_866,y_1579/c_scale,w_768/v1/Motor/Reviews/F8_awaits_pre-delivery.jpg",
+  "brand": "Ferrari",
+  "color": "red",
+  "price": 450000,
+  "bodyType": [
+    "sports car",
+    "coupe",
+    "compact",
+    "roadster",
+    "sport compact",
+    "supermini"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://shorturl.at/ixBY4",
+  "brand": "Nissan",
+  "color": "black",
+  "price": 30000,
+  "bodyType": [
+    "sedan",
+    "mid-size car"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://carsguide-res.cloudinary.com/image/upload/f_auto%2Cfl_lossy%2Cq_auto%2Ct_default/v1/editorial/review/hero_image/2022-PORSCHE-911-GTS-coupe-yellow-1001x565-%281%29.jpg",
+  "brand": "Porsche",
+  "color": "yellow",
+  "price": 26000,
+  "bodyType": [
+    "sports car",
+    "coupe",
+    "compact",
+    "roadster",
+    "sport compact",
+    "supermini"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://shorturl.at/oIPV1",
+  "brand": "Mercedes-Benz",
+  "color": "red",
+  "price": 80000,
+  "bodyType": [
+    "sedan",
+    "mid-size car"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://m.atcdn.co.uk/ect/media/%7Bresize%7D/1f7b79c7f1c54528a05e2fe338b76ae5.jpg",
+  "brand": "Kia",
+  "color": "red",
+  "price": 31000,
+  "bodyType": [
+    "suv",
+    "minivan",
+    "jeep",
+    "van",
+    "family car",
+    "full-size",
+    "sport utility vehicle"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7BhaKnsHuz7CrwRWzE6ioBaAkHQQ_nQYDUQ&usqp=CAU",
+  "brand": "Land Rover",
+  "color": "white",
+  "price": 240000,
+  "bodyType": [
+    "suv",
+    "minivan",
+    "jeep",
+    "van",
+    "family car",
+    "full-size",
+    "sport utility vehicle"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://resources.stuff.co.nz/content/dam/images/1/p/k/0/f/o/image.related.StuffLandscapeSixteenByNine.710x400.1pjylh.png/1524703954576.jpg?format=pjpg&optimize=medium",
+  "brand": "Volvo",
+  "color": "white",
+  "price": 38000,
+  "bodyType": [
+    "suv",
+    "minivan",
+    "jeep",
+    "van",
+    "family car",
+    "full-size",
+    "sport utility vehicle"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://www.driveninja.com/static/53bc38b3869e4a58e12a72db6f78664f/887d8/1_-_Toyota_Highlander.jpg",
+  "brand": "Toyota",
+  "color": "gray",
+  "price": 42000,
+  "bodyType": [
+    "suv",
+    "minivan",
+    "jeep",
+    "van",
+    "family car",
+    "full-size",
+    "sport utility vehicle"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/109265/hilux-exterior-right-front-three-quarter-2.jpeg?isig=0&q=80",
+  "brand": "Toyota",
+  "color": "red",
+  "price": 45000,
+  "bodyType": [
+    "truck",
+    "pickup truck",
+    "pickup",
+    "off road"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://www.motorworld.co.nz/uploads/images/GalleryThumbs/1090-18.jpg",
+  "brand": "Izuzu",
+  "color": "gray",
+  "price": 60000,
+  "bodyType": [
+    "truck",
+    "pickup truck",
+    "pickup",
+    "off road"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://www.drivencarguide.co.nz/media/100033558/20230130_132329.jpg",
+  "brand": "Ford",
+  "color": "gray",
+  "price": 65000,
+  "bodyType": [
+    "truck",
+    "pickup truck",
+    "pickup",
+    "off road"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://hagerty-media-prod.imgix.net/2021/12/2021-Toyota-Corolla-Hatchback-SE-Nightshade-3-scaled.jpg?auto=format%2Ccompress&ixlib=php-3.3.0",
+  "brand": "Toyota",
+  "color": "silver",
+  "price": 30000,
+  "bodyType": [
+    "hatchback",
+    "subcompact car",
+    "hot hatch",
+    "subcompact car",
+    "compact mpv"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/listicle/hero_image/2022-ford-Ranger-XLT-ute-blue-1001x565-%281%29.jpg",
+  "brand": "Ford",
+  "color": "blue",
+  "price": 70000,
+  "bodyType": [
+    "truck",
+    "pickup truck",
+    "pickup",
+    "off road"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://www.kbb.com/wp-content/uploads/2019/12/02-2019-Toyota-Corolla-Hatchback-Exterior-KBB-e1664837712936.jpg",
+  "brand": "Toyota",
+  "color": "blue",
+  "price": 40000,
+  "bodyType": [
+    "hatchback",
+    "subcompact car",
+    "hot hatch",
+    "subcompact car",
+    "compact mpv"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://assets-eu-01.kc-usercontent.com/3b3d460e-c5ae-0195-6b86-3ac7fb9d52db/a8cc7d69-bb37-435d-a18a-29db5fb89d02/Porsche%20718%20Cayman%20%281%29.jpg?fm=jpg&auto=format",
+  "brand": "Porsche",
+  "color": "blue",
+  "price": 290000,
+  "bodyType": [
+    "sports car",
+    "coupe",
+    "compact",
+    "roadster",
+    "sport compact",
+    "supermini"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_1080,q_auto:eco,w_1920/v1/cms/uploads/wxslhpcpunnai7uibdwj",
+  "brand": "Nissan",
+  "color": "silver",
+  "price": 89000,
+  "bodyType": [
+    "sports car",
+    "coupe",
+    "compact",
+    "roadster",
+    "sport compact",
+    "supermini"
+  ],
+  "__v": 0
+},
+{
+  "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW14r1cq0MsT_wlihpb9RJszr5L9djEAPLNw&usqp=CAU",
+  "brand": "Ford",
+  "color": "white",
+  "price": 25000,
+  "bodyType": [
+    "hatchback",
+    "subcompact car",
+    "hot hatch",
+    "subcompact car",
+    "compact mpv"
+  ],
+  "__v": 0
+}]
